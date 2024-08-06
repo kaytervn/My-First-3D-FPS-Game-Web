@@ -11,12 +11,18 @@ export class Box extends THREE.Mesh {
       y: 0,
       z: 0,
     },
+    rotation = {
+      x: 0,
+      y: 0,
+      z: 0,
+    },
   }) {
     super(
       new THREE.BoxGeometry(width, height, depth),
       new THREE.MeshStandardMaterial({ color })
     );
     this.position.set(position.x, position.y, position.z);
+    this.rotation.set(rotation.x, rotation.y, rotation.z);
     this.castShadow = true;
 
     this.width = width;
