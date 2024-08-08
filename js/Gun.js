@@ -23,7 +23,7 @@ export class Gun extends THREE.Group {
       new Box({
         width: 0.1,
         height: 0.35,
-        depth: 0.15,
+        depth: 0.1,
         color: "#5a5055",
         position: {
           x: 0,

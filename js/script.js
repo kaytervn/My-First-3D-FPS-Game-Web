@@ -100,6 +100,7 @@ function shootBullet() {
   const direction = new THREE.Vector3();
   camera.getWorldDirection(direction);
   bullet.velocity.copy(direction).multiplyScalar(0.5);
+  bullet.lookAt(bullet.position.clone().add(direction));
 
   scene.add(bullet);
   bullets.push(bullet);
